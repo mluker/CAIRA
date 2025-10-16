@@ -29,7 +29,7 @@ Our strategy is incremental and selective:
 
 ### When do we not use an AVM
 
-Our criteria for not adopting an AVM included:
+Our criteria for not adopting an AVM include:
 
 - **Immaturity and Limited Coverage**: AVM modules can lack support for advanced or niche Azure features.
 - **Modularity Concerns**: Certain AVMs were tightly coupled or monolithic, making customization difficult for our specific use cases.
@@ -43,7 +43,7 @@ We currently use a mix of:
 - **AzAPI provider**: Used for resources or configurations not supported by AzureRM or AVMs.
 - **AzureRM provider**: For stable, well-supported resources with minimal customization needs.
 
-Decision Criteria included:
+Decision Criteria include:
 
 - **Feature completeness**: Does the module support all required resource properties?
 - **Maintainability**: Can we easily update and extend the module?
