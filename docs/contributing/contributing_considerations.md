@@ -29,7 +29,7 @@ Our strategy is incremental and selective:
 
 ### When do we not use an AVM
 
-Our criteria for not adopting an AVM include:
+Key reasons for not utilizing an AVM include:
 
 - **Immaturity and Limited Coverage**: AVM modules can lack support for advanced or niche Azure features.
 - **Modularity Concerns**: Certain AVMs were tightly coupled or monolithic, making customization difficult for our specific use cases.
@@ -40,12 +40,12 @@ Our criteria for not adopting an AVM include:
 We currently use a mix of:
 
 - **Custom Terraform modules**: Built in-house to meet specific compliance, security, and architectural needs.
-- **AzAPI provider**: Used for resources or configurations not supported by AzureRM or AVMs.
+- **AzAPI provider**: Will always have the latest APIs available as it directly uses the ARM API.
 - **AzureRM provider**: For stable, well-supported resources with minimal customization needs.
 
 Decision Criteria include:
 
 - **Feature completeness**: Does the module support all required resource properties?
 - **Maintainability**: Can we easily update and extend the module?
-- **Compliance and security**: Does it align with our internal standards and the Azure Well-Architected Framework?
+- **Compliance and security**: Does it align with our standards and security posture?
 - **Community and vendor support**: Is the module actively maintained and documented?
