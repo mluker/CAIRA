@@ -136,7 +136,6 @@ By default, new resources will be created for the AI Foundry agent capability ho
 **Default configuration**
 
 ```terraform
-
 module "capability_host_resources_1" {
   source = "../../modules/new_resources_agent_capability_host_connections"
   # ... other required inputs ...
@@ -146,7 +145,6 @@ module "capability_host_resources_1" {
 **Bring your own AI Foundry agent capability host configuration**
 
 ```terraform
-
 module "capability_host_resources_1" {
   source = "../../modules/existing_resources_agent_capability_host_connections"
   # ... other required inputs ...
